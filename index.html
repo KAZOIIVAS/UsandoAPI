@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API NASA</title>
+</head>
+<body>
+    <div>
+        <h1>Veamos si funciona</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Enim nostrum veritatis recusandae perspiciatis eius, praesentium quia 
+             alias in pariatur tempora id? Rem aut perferendis nam doloremque vitae assumenda tempore maiores!
+
+        </p>
+    </div>
+    <div id="container-img">
+        <h1>estees el container-img</h1>
+
+    </div>
+
+
+    <div id="objetos-cercanos">
+        <h2>Objetos cercanos a la tierra</h2>
+        <div id="buscador">
+            <span>Por número</span>
+            <input type="text" id="numas">
+            <button id="btn-n" onclick="obtenernum()">Buscar</button>
+            <span>Fecha de inicio</span>
+            <input type="text" id="fecha-ini" placeholder="AAAA-MM-DD">
+            <span>
+            Fecha final
+            </span>
+            <input type="text" id="fecha-fin" placeholder="AAAA-MM-DD">
+            <button id="btn-f" onclick="obtenerasteroidesfecha()">Buscar</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
