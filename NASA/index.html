@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API NASA</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css"rel="stylesheet" type="text/css">>
+  
 </head>
 <body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="./img/NASA_logo.svg.png" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+           
+            <span class="fs-4">API NASA</span>
+          </a>
+        </header>
+    </div>    
     <div>
+        <h1>Veamos si funciona</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
              Enim nostrum veritatis recusandae perspiciatis eius, praesentium quia 
@@ -15,7 +27,45 @@
 
         </p>
     </div>
+    <div >
+        <h1>estees el container-img</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"id="container-img">
+              
+              </div>
+        </div>
+
+    </div>
 
 
+    <div id="objetos-cercanos">
+        <h2>Objetos cercanos a la tierra</h2>
+        <div id="buscador">
+            <span>Por número</span>
+            <input type="text" id="numas">
+            <button id="btn-n" onclick="obtenernum()">Buscar</button>
+            <span>Fecha de inicio</span>
+            <input type="text" id="fecha-ini" placeholder="AAAA-MM-DD">
+            <span>
+            Fecha final
+            </span>
+            <input type="text" id="fecha-fin" placeholder="AAAA-MM-DD">
+            <button id="btn-f" onclick="obtenerasteroidesfecha()">Buscar</button>
+        </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; 2022
+        <p>Esta pagina fue hecha con fines academicios</p>
+        <span>Kazumy Olivas Ramos</span>
+      </footer>
+    <script src="./index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
